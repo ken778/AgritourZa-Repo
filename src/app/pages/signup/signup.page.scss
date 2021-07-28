@@ -1,0 +1,88 @@
+ion-item{
+   
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+.authButton{
+    position:absolute;
+    width:100%;
+    
+    bottom: 80px; 
+    //background-color: chartreuse;
+    button{
+        background: transparent !important;
+        border: 1px solid black;
+        padding:5%;
+        width: 100%;
+        border-radius: 40px;
+        font-size: 2rem;
+        font-weight: 420;
+     
+    }
+    padding-left:27px;
+    padding-right:25px;
+    
+ }
+ 
+ .footer{
+     position:absolute;
+     width:100%;
+     bottom: 10px; 
+     text-align: center;
+     h3{
+         font-size: 1.2rem;
+         font-weight: 400;
+     }
+ }
+ ion-label{
+    
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 40px;
+    //width: 10px !important;
+}
+ion-input{
+   padding:3% !important;
+   border-radius: 40px;
+   border:none !important;
+   border: 1px solid black !important;
+  width: 100%;
+}
+
+ion-label{
+    margin-bottom: -13px !important;
+    z-index: 100 !important;
+    background-color:rgb(224, 219, 219);
+    padding: 1%;
+    margin-left: 70px;
+    margin-right:70px;
+    margin-bottom: 10px;
+   border: none !important;
+  
+}
+ion-item{
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-bottom: 10px;
+}
+form{
+    
+  
+}
+img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 2%;
+
+}

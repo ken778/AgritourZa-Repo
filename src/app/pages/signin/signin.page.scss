@@ -1,0 +1,90 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.welcome-text{
+   
+   position: absolute;
+   top:35%;
+   
+    h2{
+        font-size: 30px;
+        font-weight: 300;
+        //margin-top: 16rem !important;
+      
+    }
+    margin-left: 25px;
+   
+}
+.header{
+    //padding-top: 100x;
+}
+
+form{
+   
+   position: absolute;
+   bottom: 100px;
+   width: 100% !important;
+}
+
+.authButton{
+   // position:absolute;
+    width:100% !important;
+    
+   // bottom: 100px; 
+  
+    button{
+        background: transparent !important;
+        border: 2px solid rgb(177, 21, 21);
+        padding:5%;
+        width: 100%;
+        border-radius: 40px;
+        font-size: 2rem;
+        font-weight: 420;
+     
+    }
+   padding-left:30px;
+   padding-right:30px;
+    
+ }
+ 
+ .footer{
+     position:absolute;
+     width:100%;
+     bottom: 30px; 
+     text-align: center;
+     h3{
+         font-size: 1.2rem;
+         font-weight: 400;
+     }
+ }
+ ion-label{
+    
+     text-align: center;
+     border: 1px solid black;
+     border-radius: 40px;
+     //width: 10px !important;
+ }
+ ion-input{
+    padding:3% !important;
+    border-radius: 40px;
+    border:none !important;
+    border: 1px solid black !important;
+   width: 100%;
+ }
+
+ ion-label{
+     margin-bottom: -13px !important;
+     z-index: 100 !important;
+     background-color:rgb(224, 219, 219);
+     padding: 1%;
+     margin-left: 70px;
+     margin-right:70px;
+     margin-bottom: 10px;
+    border: none !important;
+   
+}
+ion-item{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}

@@ -1,20 +1,37 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
+ion-content {
+    --background: url('../../../assets/img/imga2.jpg') no-repeat 100% 100%;
+    --background-position: center !important;
+    --background-size: cover !important;
+    --background-repeat: no-repeat !important;
+    --align-items: initial;
+}
 .welcome-text{
    
    position: absolute;
    top:35%;
+   margin-left: 25px;
    
-    h2{
-        font-size: 30px;
-        font-weight: 300;
-        //margin-top: 16rem !important;
-      
-    }
-    margin-left: 25px;
    
 }
+.welcome-text h2:nth-child(1){
+    font-size: 30px;
+    font-weight: 300;
+    //margin-top: 16rem !important;
+    color: white;
+ 
+  
+}
+.welcome-text h2:nth-child(2){
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: -10px !important;
+    color: white;
+  
+}
+
 .header{
     //padding-top: 100x;
 }
@@ -30,16 +47,20 @@ form{
    // position:absolute;
     width:100% !important;
     
-   // bottom: 100px; 
+   bottom: 60px !important; 
   
     button{
         background: transparent !important;
-        border: 2px solid rgb(177, 21, 21);
-        padding:5%;
+        border: 2px solid white;
+        padding:4%;
         width: 100%;
         border-radius: 40px;
         font-size: 2rem;
         font-weight: 420;
+        color: white;
+        margin-top: 10px;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
      
     }
    padding-left:30px;
@@ -55,6 +76,7 @@ form{
      h3{
          font-size: 1.2rem;
          font-weight: 400;
+         color: white;
      }
  }
  ion-label{
@@ -68,8 +90,14 @@ form{
     padding:3% !important;
     border-radius: 40px;
     border:none !important;
-    border: 1px solid black !important;
-   width: 100%;
+    border: 2px solid white !important;
+    width: 100%;
+    text-align: center;
+   color: white;
+   font-size: 23px;
+   font-family: 'Roboto', sans-serif;
+   -webkit-backdrop-filter: blur(5px);
+   backdrop-filter: blur(5px);
  }
 
  ion-label{
@@ -87,4 +115,5 @@ ion-item{
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 10px;
+   --background: transparent !important;
 }

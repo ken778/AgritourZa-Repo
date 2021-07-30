@@ -23,6 +23,26 @@ const routes: Routes = [
     path: 'landing',
     loadChildren: () => import('./pages/landing/landing.module').then( m => m.LandingPageModule)
   },
+  {
+    path: 'soil-page',
+    loadChildren: () => import('./pages/soil-page/soil-page.module').then( m => m.SoilPagePageModule)
+  },
+  {
+    path: 'water-page',
+    loadChildren: () => import('./pages/water-page/water-page.module').then( m => m.WaterPagePageModule)
+  },
+  {
+    path: 'production-page',
+    loadChildren: () => import('./pages/production-page/production-page.module').then( m => m.ProductionPagePageModule)
+  },
+  {
+    path: 'dashboard-page',
+    loadChildren: () => import('./pages/dashboard-page/dashboard-page.module').then( m => m.DashboardPagePageModule)
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./pages/dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
 ];
 
 @NgModule({

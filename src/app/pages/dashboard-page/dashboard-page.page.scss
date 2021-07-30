@@ -1,0 +1,52 @@
+ion-toolbar{
+    //--background-color:transparent;
+    //--ion-color-base:transparent !important;
+    //--border-width: 0 !important;
+
+}
+ion-row{
+    align-content: space-between !important;
+}
+.header{
+    padding: 3%;
+    display: grid;
+    grid-template-columns: 3fr 0.5fr;
+    //justify-content:space-between;
+    background-color: 	#daa169;
+    
+}
+img{
+    
+}
+ion-avatar{
+    --padding: 1% !important;
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+}
+ion-text{
+   
+    padding-top:  10%;
+    //padding-left: 10%;
+    text-align: center;
+    h1{
+        //padding-left: 15% !important;
+    }
+}
+.cloud-database{
+    margin:30px 0px 30px 0px;
+    width: 90%;
+    float: left;
+    background-color: rgb(79, 160, 79);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.soil-moisture{
+    margin:30px 0px 30px 0px;
+    width: 90%;
+    background-color: rgba(180, 40, 40, 0.616);
+    float: right;
+    text-align: right;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}

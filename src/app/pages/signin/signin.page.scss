@@ -2,7 +2,7 @@
     font-family: 'Roboto', sans-serif;
 }
 ion-content {
-    --background: url('../../../assets/img/WhatsApp\ Image\ 2021-07-29\ at\ 10.27.42.jpeg') no-repeat 100% 100%;
+    --background: url('../../../assets/img/WhatsApp\ Image\ 2021-07-29\ at\ 10.27.42.jpeg') no-repeat center center fixed;
     --background-position: center !important;
     --background-size: cover !important;
     --background-repeat: no-repeat !important;
@@ -11,8 +11,9 @@ ion-content {
 .welcome-text{
    
    position: absolute;
-   top:35%;
+   top:20%;
    margin-left: 25px;
+   position: fixed;
    
    
 }
@@ -116,4 +117,5 @@ ion-item{
     margin-right: 20px;
     margin-bottom: 10px;
    --background: transparent !important;
+    --border-bottom-width: 0px !important;
 }

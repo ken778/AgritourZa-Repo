@@ -1,27 +1,26 @@
-#container {
-  text-align: center;
+ion-tab-bar{
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  --background: transparent;
+    background-color: 	#E3B266;
+  padding-top:10px;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  ion-label{
+    margin-top: -7px;
+    font-size: 11px;
+    padding-bottom: 10px;
+  }
+  
+} 
+ion-tab-button{
+  color: #774e10;
 }
+  img{
+    width:40px;
+    height:40px;
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
+    //color: white !important;
+  }
+  .tab-selected{
+    color:white;
+  }

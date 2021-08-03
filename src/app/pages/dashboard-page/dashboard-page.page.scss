@@ -7,15 +7,64 @@ ion-toolbar{
 }
 ion-row{
     align-content: space-between !important;
+    h3{
+     text-transform: uppercase;
+     font-weight: 420;
+     font-size: 12px;
+     letter-spacing: 2;
+    }
+    p{
+        font-weight: 420;
+        font-size: 11px;
+
+    }
 }
 .header{
-    //padding: 3%;
+  // background: url(../../../assets/Farmru-icons/inter.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   // padding: 3%;
     display: grid;
-    grid-template-columns: 3fr 0.5fr;
+    grid-template-columns: 65% 35%;
     //justify-content:space-between;
-    background-color: 	#daa169;
-    display: none;
+    background-color: 	#E3B266;
+
+    ion-text{
+   
+        padding-top:  10%;
+        //padding-left: 10%;
+       //text-align: center;
+       float: right;
+        h1{
+            //padding-left: 15% !important;
+            font-weight: 500;
+            
+        }
+    }
     
+    
+}
+.header div:nth-child(1){
+   // background-color: blue;
+    float: right;
+    h1{
+       text-transform: uppercase;
+    }
+}
+.header div:last-child{
+  //background-color: yellow;
+  background-image: url(../../../assets/Farmru-icons/inter.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  ion-avatar{
+       float: right;
+       
+        
+   }
+   padding: 3% !important;
+   
+ 
+   
 }
 img{
     
@@ -26,22 +75,14 @@ ion-avatar{
     width: 60px;
     height: 60px;
 }
-ion-text{
-   
-    padding-top:  10%;
-    //padding-left: 10%;
-    text-align: center;
-    h1{
-        //padding-left: 15% !important;
-    }
-}
+
 .cloud-database{
 
 }
 .soil-moisture{
     margin:30px 0px 30px 0px;
     width: 90%;
-    background-color: rgba(180, 40, 40, 0.616);
+    //background-color: #50B948;
     float: right;
     text-align: right;
     border-top-left-radius: 50px;
@@ -66,6 +107,7 @@ ion-row .info:nth-child(2){
 
 //soil div
 .soil-moisture{
+    box-shadow: 0 10px 50px rgba(240, 236, 236, 0.979) inset;
     display: grid;
     grid-template-columns: 1fr 2fr;
     img{
@@ -73,39 +115,69 @@ ion-row .info:nth-child(2){
         height: 65px;
     }
     .content{
-        background-color:blue;
+        //background-color: blue;
+        //box-shadow: 0 10px 50px rgba(240, 236, 236, 0.979) inset;
        
         
     }
     //wet text
-    .content ion-text p:nth-child(2){
+    .content ion-text h3:nth-child(2){
         margin-top:-10px !important;
-        font-size: 25px;
-        font-weight: 200;
+        font-size: 22px;
+        font-weight: 400;
         text-align: left;
+        text-transform: uppercase;
     }
     .content ion-text p:nth-child(1){
-        opacity: 50%; 
+        opacity: 55%; 
         text-align: left;
+        text-transform: capitalize;
+    }
+    ion-text{
+        p{
+            padding-top: 1em;
+        }
+        
     }
     .icon{
        
-        background-color: blanchedalmond;
+       // background-color: #50B948;
         border-top-left-radius: 50px;
         border-bottom-left-radius: 50px;
         ion-avatar{
-            margin:0px 0px 10px 11px !important;
+            margin:5px 0px 10px 11px !important;
             
+        }
+        ion-icon{
+            padding: 0.5em;
+            width: 55px;
+            height: 55px;
+            //background-color: white;
+            border-radius: 50%;
+            color: blue;
+            text-align: center;
         }
 
     }
+    .content{
+        p{
+           
+            font-size: 12px;
+            font-weight: 100;
+             color: black;
+        }
+    }
 }
 //cloud database
+.cloud{
+    
+}
 .cloud-database{
+    
     margin:20px 0px 30px 0px;
     width: 90%;
     float: left;
-    background-color: rgb(79, 160, 79);
+    background-color: #50B948;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     display: grid;
@@ -128,7 +200,7 @@ ion-row .info:nth-child(2){
                 height: 60px;
                 background-color: white;
                 border-radius: 50%;
-                color:  rgb(79, 160, 79);
+                color: #50B948;
                 text-align: center;
             }
         }
@@ -150,6 +222,42 @@ ion-row .info:nth-child(2){
     .content ion-text p:nth-child(1){
         opacity: 50%; 
        
+    }
+    .content ion-text{
+        color: white;
+        p{
+            margin-left: 15px;
+            font-size: 12px;
+            font-weight: 100;
+        }
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        h5{
+            padding-left: 37px;
+            //margin-bottom: -12px;
+            text-transform: capitalize;
+        }
+
+        ul{
+            li{
+                text-transform: capitalize;
+                list-style: none;
+                font-size: 10px;
+                line-height: 1.1;
+                font-weight: 50;
+               left: 0;
+            }
+            text-align: left;
+        }
+    }
+    .content div:nth-child(2){
+       
+        ul{
+                padding-top: 19px !important;
+           
+        }
     }
 }
 .cards{
@@ -178,14 +286,19 @@ ion-row .info:nth-child(2){
 .middle-section{
     width: 100%;
     float: left;
+    text-align: center;
     .content{
+        justify-content: space-between !important;
         width: 100%;
         text-align: center;
         ion-row{
-            
+            padding: 5% 5% 5% 5%;
+           
+            justify-content: space-between !important;
         }
           ion-col{
-              margin-left: 5px;
+              
+            margin-left: 3px;
               //border: 1px solid black;
               border-bottom-left-radius: 40px;
               border-bottom-right-radius: 40px;
@@ -204,30 +317,50 @@ ion-row .info:nth-child(2){
 
 }
 
-.real-time-data-section{
-   ion-avatar{
-      
-            --margin:0px 0px 10px -10px !important;
-            float: left !important;
-            ion-icon{
-                padding: 5px;
-                width: 60px;
-                height: 60px;
-                background-color: white;
-                border-radius: 50%;
-                color:  rgb(79, 160, 79);
-                text-align: center;
-                margin-left: -8px !important;
-               
+//real-time-data-section
+.real-time-data{
+    margin-top: 2em;
+    width: 90%;
+    float: right;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #50B948;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    .real-time-data-icon{
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 50px;
+        ion-icon{
+            padding: 0.5em;
+            width: 55px;
+            height: 55px;
+            background-color: white;
+            border-radius: 50%;
+            color: #50B948;
+            text-align: center;
+        }
+        ion-avatar{
+            margin:14px 0px 15px 7px !important;
+        }
+    }
+    .real-time-data-content{
+        color: white;
+       
+        padding: 1.5%;
+        ion-text{
+            padding-right: 10%;
+            h5{
+                text-align: right;
+                font-weight: 100;
+            }
+            float: right;
+            p{
+                font-size: 10px;
+                line-height: 1.1;
+                text-align: right;
+                font-weight: 50;
             }
         }
-        .icon{
-            padding-top: 5px;
-            padding-bottom: 5px;
-            padding-left: 2px;
-            background-color:  rgb(79, 160, 79) !important;
-        }
-        .content{
-            background-color: rgb(79, 160, 79);
-        }
+    }
 }
+

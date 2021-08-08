@@ -57,6 +57,15 @@ const routes: Routes = [
           }
         ]
       },
+      {
+        path:'pest-control-page',
+        children:[
+          {
+            path:'',
+            loadChildren: () => import('../pages/pest-control-page/pest-control-page.module').then( m => m.PestControlPagePageModule)
+          }
+        ]
+      },
     ]
   }
 ];

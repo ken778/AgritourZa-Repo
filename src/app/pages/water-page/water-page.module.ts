@@ -8,12 +8,15 @@ import { WaterPagePageRoutingModule } from './water-page-routing.module';
 
 import { WaterPagePage } from './water-page.page';
 
+
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    WaterPagePageRoutingModule
+    WaterPagePageRoutingModule,
+   
   ],
   declarations: [WaterPagePage]
 })

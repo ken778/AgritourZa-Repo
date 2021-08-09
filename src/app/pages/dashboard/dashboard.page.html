@@ -1,9 +1,90 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>dashboard</ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content>
-
+  <div class="header">
+    <div style="padding: 3%;">
+      <ion-text slot="start">
+        <h1>dashboard</h1>
+      </ion-text>
+    </div>
+     <div style="padding: 3%;">  
+      <ion-avatar slot="end">
+        <img src="../../../assets/img/Farmru_logo_size3.png" alt="">
+      </ion-avatar>
+     </div>
+  </div>
+  <!--soil section-->
+  <div class="soil-moisture">
+    <div class="icon">
+        <ion-avatar>
+          <ion-icon name="water-sharp"></ion-icon>
+        </ion-avatar>
+    </div>
+   
+    <div class="content">
+      <ion-text>
+        <p> soil moisture (1-100%)</p>
+          <h3>wet</h3>
+      </ion-text>
+    </div>
+  </div>
+  <!--cloud section-->
+  <div class="cloud">
+    <div class="cloud-database">
+      <div class="content">
+        <div>
+          <ion-text>
+            <h5>cloud dabases</h5>
+              <ul>
+                <li>soil moisture</li>
+                <li>humidity</li>
+                <li>ambient temperature</li>
+                <li>light intensity</li>
+              </ul>
+          </ion-text>
+        </div>
+        <div>
+          <ion-text>
+            <ul>
+              <li>60%</li>
+              <li>25%</li>
+              <li>25c</li>
+              <li>20lux</li>
+            </ul>
+          </ion-text>
+        
+        </div>
+       
+      </div>
+      <div class="icon">
+        <ion-avatar>
+          <ion-icon name="wifi-outline"></ion-icon>
+        </ion-avatar>
+      </div>
+      </div>
+  </div>
+    <!--middle section-->
+    <!--soil section-->
+    <div class="wrap">
+      <div class="real-time-data">
+        <div class="real-time-data-icon">
+          <ion-avatar>
+            <ion-icon name="earth"></ion-icon>
+          </ion-avatar>
+        </div>
+       
+        <div class="real-time-data-content">
+          <ion-text>
+            <h5>Real time data</h5>
+              <p>The farm state function displays real time data 
+                of PH level from NPK tester, relative huminity,
+                soil moisture, envirentmental light intensity and humidity.
+              </p>
+          </ion-text>
+        </div>
+      </div>
+      
+    
+    </div>
+ 
 </ion-content>

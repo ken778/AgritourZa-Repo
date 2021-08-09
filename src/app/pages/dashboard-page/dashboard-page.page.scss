@@ -226,7 +226,7 @@ ion-row .info:nth-child(2){
     .content ion-text{
         color: white;
         p{
-            margin-left: 15px;
+            margin-left: 5px;
             font-size: 12px;
             font-weight: 100;
         }
@@ -284,12 +284,12 @@ ion-row .info:nth-child(2){
     }
 }
 .middle-section{
-    width: 100%;
+    width: 100% !important;
     float: left;
     text-align: center;
     .content{
         justify-content: space-between !important;
-        width: 100%;
+        width: 100% !important;
         text-align: center;
         ion-row{
             padding: 5% 5% 5% 5%;
@@ -318,6 +318,13 @@ ion-row .info:nth-child(2){
 }
 
 //real-time-data-section
+.real-time-data-wrap,
+.soil-moisture-wrap,
+.cloud
+{
+    width: 100% !important;
+}
+
 .real-time-data{
     margin-top: 2em;
     width: 95%;
@@ -340,21 +347,22 @@ ion-row .info:nth-child(2){
             text-align: center;
         }
         ion-avatar{
-            margin:14px 0px 15px 7px !important;
+            margin:10px 0px 15px 7px !important;
         }
     }
     .real-time-data-content{
         color: white;
        
-        padding: 1.5%;
+        padding: 1%;
         ion-text{
-            padding-right: 10%;
+            padding-right: 15%;
             h5{
                 text-align: right;
-                font-weight: 100;
+                font-weight: 400;
             }
             float: right;
             p{
+                margin-top: -12px;
                 font-size: 10px;
                 line-height: 1.1;
                 text-align: right;
@@ -363,4 +371,33 @@ ion-row .info:nth-child(2){
         }
     }
 }
+
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+
 

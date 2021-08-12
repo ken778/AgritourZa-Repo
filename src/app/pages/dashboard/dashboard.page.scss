@@ -332,3 +332,9 @@ ion-row .info:nth-child(2){
 .wrap{
     width: 100% !important;
 }
+ion-content{
+    width: 100% !important;
+    --background: transparent !important;
+     -webkit-backdrop-filter: blur(30px);
+      backdrop-filter: blur(30px);
+}

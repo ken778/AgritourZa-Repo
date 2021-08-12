@@ -2,6 +2,9 @@
     // background: url(../../../assets/Farmru-icons/inter.png);
      background-size: cover;
      background-repeat: no-repeat;
+     position: fixed;
+     width: 100% !important;
+    z-index: 100;
      // padding: 3%;
       display: grid;
       grid-template-columns: 60% 40%;
@@ -54,6 +57,7 @@
  .heading{
      width: 100%;
      text-align: center;
+     margin-top: 100px;
      h1{
          padding: 3%;
          font-weight: 300;
@@ -68,14 +72,14 @@
      width: 100% !important;
  }
 
- .soil-moisture{
+.soil-moisture{
     margin:15px 0px 30px 0px;
     width: 95%;
     //background-color: #50B948;
     float: right;
     text-align: right;
     border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
+    border-bottom-left-radius: 50px; 
 }
 .info{
     background: var(--ion-color-tertiary);
@@ -124,12 +128,13 @@ ion-row .info:nth-child(2){
     .content ion-text p:nth-child(1){
         opacity: 55%; 
         text-align: left;
-        font-size: 19px;
+        font-size: 15px;
         text-transform: capitalize;
     }
     ion-text{
         p{
             padding-top: 1em;
+            font-size: 12px;
         }
         
     }
@@ -148,7 +153,7 @@ ion-row .info:nth-child(2){
             height: 55px;
             //background-color: white;
             border-radius: 50%;
-            color: blue;
+            color: #232278;
             text-align: center;
         }
 
@@ -188,7 +193,7 @@ ion-row .info:nth-child(2){
     //temperature trend text
     .content ion-text h3:nth-child(2){
         margin-top:-10px !important;
-        font-size: 22px;
+        font-size: 21px;
         font-weight: 400;
         text-align: left;
         text-transform: uppercase;
@@ -196,7 +201,7 @@ ion-row .info:nth-child(2){
     .content ion-text p:nth-child(1){
         opacity: 55%; 
         text-align: left;
-        font-size: 19px;
+        font-size: 15px;
         text-transform: capitalize;
     }
     ion-text{
@@ -222,10 +227,19 @@ ion-row .info:nth-child(2){
              height: 55px;
              background-color: white;
              border-radius: 50%;
-             color: blue;
+             color: #232278;
              text-align: center;
          }
  
      }
 
+}
+.graph-container{
+    width: 100%;
+    float: left;
+}
+.ph-level{
+    h3{
+        text-transform: lowercase !important;
+    }
 }

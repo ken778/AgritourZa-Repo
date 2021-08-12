@@ -1,4 +1,8 @@
-
+<!--<ion-header padding="true" >
+  <ion-toolbar>
+<img  src="../../../assets/Farmru-icons/inter.png" no-repeat>
+  </ion-toolbar>
+</ion-header>-->
 
 <ion-content>
   <div class="header">
@@ -67,22 +71,30 @@
       </div>
       </div>
   </div>
-  <div class="section group">
-    <div class="col span_1_of_3">
-      <ion-icon name="water-outline"></ion-icon><br>
-    hjhjhchjxchxjhcxjhchxgchxgchxgcxghgcxghcxghgcxghgcxhggcgfh
- 
-    </div>
-    <div class="col span_1_of_3">
-    This is column 2
-    jhkj
-    jkj
-    </div>
-    <div class="col span_1_of_3">
-    This is column 3
-    jkjjklj
+  <div class="middle">
+    <div class="section group">
+      <div class="col span_1_of_3">
+        <i class="fa fa-tint" aria-hidden="true"></i>
+        <br>
+        <h3>humidity</h3>
+        <p>the amount of water vapor in the air.</p>
+   
+      </div>
+      <div class="col span_1_of_3">
+        <i class="fa fa-thermometer-half" aria-hidden="true"></i>
+        <br>
+        <h3>temperature</h3>
+        <p>Ambient air temperature in degrees Celcius</p>
+      </div>
+      <div class="col span_1_of_3">
+        <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+        <br>
+        <h3>light intensity</h3>
+        <p>Environmental light intensity measured in lux</p>
+      </div>
     </div>
   </div>
+ 
   <div class="real-time-data-wrap">
     <div class="real-time-data">
       <div class="real-time-data-icon">
@@ -102,5 +114,8 @@
       </div>
     </div>
   </div>
-   
+   <div class="testing" style="width: 100%; float: left;" *ngFor="let item of details">
+     <h3>details</h3>
+    <p>{{item.names}}</p>
+  </div>
 </ion-content>

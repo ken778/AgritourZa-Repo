@@ -26,7 +26,7 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: 'soil-page',
+        redirectTo: 'dashboard-page',
         pathMatch: 'full'
       },
      

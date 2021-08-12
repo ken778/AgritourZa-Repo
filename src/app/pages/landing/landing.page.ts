@@ -13,7 +13,7 @@ export class LandingPage implements OnInit {
   ngOnInit() {
   }
   toDash(){
-    this.route.navigate(['/home'])
+    this.route.navigate(['/signin'])
   }
 
 }

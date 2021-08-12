@@ -8,37 +8,37 @@
   
   </div>
   
-  <form>
+  
     <ion-item lines="none">
       <ion-label position="stacked" >full names</ion-label>
-      <ion-input type="tel"></ion-input>
+      <ion-input  [(ngModel)]="names" type="text"></ion-input>
     </ion-item>
      <ion-item lines="none">
       <ion-label position="stacked">unique app id</ion-label>
-      <ion-input type="tel"></ion-input>
+      <ion-input [(ngModel)]="appID" type="text"></ion-input>
     </ion-item>
      <ion-item lines="none">
       <ion-label position="stacked">ID number</ion-label>
-      <ion-input type="tel"></ion-input>
+      <ion-input [(ngModel)]="idNo" type="number"></ion-input>
     </ion-item>
      <ion-item lines="none">
       <ion-label position="stacked">email address</ion-label>
-      <ion-input type="tel"></ion-input>
+      <ion-input [(ngModel)]="email" type="email"></ion-input>
     </ion-item>
      <ion-item lines="none">
       <ion-label position="stacked">create password</ion-label>
-      <ion-input type="tel"></ion-input>
+      <ion-input [(ngModel)]="password" type="password"></ion-input>
     </ion-item>
      <ion-item lines="none">
       <ion-label position="stacked">confim password</ion-label>
-      <ion-input type="tel"></ion-input>
+      <ion-input [(ngModel)]="confirmPassword" type="password"></ion-input>
     </ion-item>
 
-    <ion-button expand="block" shape="round" fill="clear">sign up</ion-button>
-   </form>
+    <ion-button expand="block" shape="round" fill="clear" (click)="signUp()" >sign up</ion-button>
+   
    <div class="footer">
      <ion-text>
-       <h3>Already have an account? <span>Sign in</span></h3>
+       <h3>Already have an account? <a style="color: white;" (click)='toSignIn()'><span>Sign in</span></a> </h3>
      </ion-text>
     
    </div>
